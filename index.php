@@ -12,7 +12,8 @@
     <?php 
         echo "This is my Homepage";
         echo "Hello World, I'm Ejay";
-        echo "This is also a paragraph printed out inside the php script tags.";
+        echo "This is the 2nd paragraph printed out inside the php script tags.";
+        echo "<p>This is the <strong>3rd Paragraph</strong> that got displayed inside a paragraph element inside of an echo statement. </P>";
     ?>
 
 </body>
