@@ -37,5 +37,17 @@
     <h3>Double Quotes</h3>
     <p>"This is a string data type in Php"</p>
     <h3>Single Quotes</h3>
+    <p>'This is a string data type in Php'</p>
+    <p>"SELECT person WHERE name = 'Ejay'"</p>
+
+    <?php
+        //INCORRECT
+        //echo 'I'm Learning to work with strings in Php';
+
+        //CORRECT
+        echo 'I\'m learning how to work strings in Php.';
+    ?>
+
+
 </body>
 </html>
