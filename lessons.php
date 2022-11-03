@@ -47,7 +47,29 @@
         //CORRECT
         echo 'I\'m learning how to work strings in Php.';
     ?>
+    <hr/>
 
+    <h2>Integers</h2>
+    <?php
+
+        echo 20;
+        //IT WILL BE INLINE TO EACH OTHER
+        echo "10";
+
+    ?>
+
+    <p><strong>"10" !== 10</strong></p>
+
+    <?php
+
+        if("10" !== 10){
+            echo "not the same data type!";
+        }
+
+    ?>
+    <hr/>
+
+    <h2>Floats</h2>
 
 </body>
 </html>
