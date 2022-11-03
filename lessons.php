@@ -82,5 +82,26 @@
     <h3>C# Float Data Type</h3>
     <p>20.5f</p>
 
+    <hr/>
+    <h2>Adding Line Breaks</h2>
+    <?php
+        echo "if you view the page source \n then you will fine a new line in a string";
+        echo '<br>';
+        echo nl2br("you will fine the \n new line in this string \r\n on the browser window");
+    ?>
+    <hr/>
+    <h3>Boolean</h3>
+    <ul>
+        <li>True</li>
+        <li>False</li>
+    </ul>
+
+    <?php 
+        $a = true; //declaring variable in PHP is using $ "Dollar Sign"
+        if($a === true){
+            echo 'variable $a is true';
+        }
+    ?>
+
 </body>
 </html>
