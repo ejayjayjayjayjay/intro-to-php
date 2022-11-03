@@ -175,7 +175,9 @@
             echo '<br>';
             $sum = $num1 / $num2;
             echo $sum;
-
+            echo '<br>';
+            $sum = $num1 % $num2;
+            echo $sum;
         ?>
     
 
