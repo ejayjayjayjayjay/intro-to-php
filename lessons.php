@@ -103,5 +103,24 @@
         }
     ?>
 
+    <hr/>
+
+    <h2>Variable</h2>
+    <?php
+        $myName = 'Ejay';
+        $myAge = 28;
+        $dota = true;
+        $myFLoat = 5.5;
+    ?>
+
+    <h3>Two Parts of a Variable</h3>
+    <?php
+        //declaring a variable in
+        $myName;
+        //Initializing a value in a variable
+        $myName = 'Ejay';
+    ?>
+
+
 </body>
 </html>
