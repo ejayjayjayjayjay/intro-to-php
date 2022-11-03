@@ -179,7 +179,31 @@
             $sum = $num1 % $num2;
             echo $sum;
         ?>
-    
+    <hr/>
+    <h3>Compound Assignment with Arithmetic Operators</h3>
+        <?php
+            //AUGMENTED ADDITION = USING PLUS AND EQUAL IS THE SAME AS PLUS 1 AND 2 "CONSIDERED AS A SHORT HAND"
+            $num1 += $num2;
+            // THIS IS A LONG LINE OF INSTRUCTION FOR PLUS AND EQUAL
+            $num1 = $num1 + $num2;
+
+        ?>
+
+        <?php
+
+            $num1 = 1;
+            $num2 = 2;
+            $sum;
+            $num1 += $num2;
+            echo $num1;
+            echo '<br>';
+            $num1 = 1;
+            $num2 = 2;
+            $sum;
+            $num1 = $num1 + $num2;
+            echo $num1;
+
+        ?>
 
 </body>
 </html>
