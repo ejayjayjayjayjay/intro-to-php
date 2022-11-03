@@ -202,8 +202,22 @@
             $sum;
             $num1 = $num1 + $num2;
             echo $num1;
-
         ?>
+        <hr/>
+
+    <h3>Comparison & Strick Equality Operators</h3>
+    <?php
+
+        $num1 == $num2;
+        $num1 === $num2;
+        $num1 != $num2;
+        $num1 !== $num2;
+        $num1 < $num2;
+        $num1 <= $num2;
+        $num1 > $num2;
+        $num1 >= $num2;
+        $num1 <=> $num2;
+    ?>
 
 </body>
 </html>
