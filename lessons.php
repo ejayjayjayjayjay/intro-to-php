@@ -106,32 +106,32 @@
     <hr/>
 
     <h2>Variable</h2>
-    <?php
-        $myName = 'Ejay';
-        $myAge = 28;
-        $dota = true;
-        $myFLoat = 5.5;
-    ?>
+        <?php
+            $myName = 'Ejay';
+            $myAge = 28;
+            $dota = true;
+            $myFLoat = 5.5;
+        ?>
 
     <h3>Two Parts of a Variable</h3>
-    <?php
-        //declaring a variable in
-        $myName;
-        //Initializing a value in a variable
-        $myName = 'Ejay';
-    ?>
+        <?php
+            //declaring a variable in
+            $myName;
+            //Initializing a value in a variable
+            $myName = 'Ejay';
+        ?>
     <hr/>
     <h3>Php Constants in Variable</h3>
-    <?php
-        CONST PI = 3.14;
-        CONST BALL_WIDTH = 5;
-        CONST BALL_HEIGHT = 5;
-        echo PI;
-        echo '<br>';
-        echo BALL_HEIGHT;
-        echo '<br>';
-        echo BALL_WIDTH;
-    ?>
+        <?php
+            CONST PI = 3.14;
+            CONST BALL_WIDTH = 5;
+            CONST BALL_HEIGHT = 5;
+            echo PI;
+            echo '<br>';
+            echo BALL_HEIGHT;
+            echo '<br>';
+            echo BALL_WIDTH;
+        ?>
 
     <hr/>
     <h2>Expressions & Operators</h2>
@@ -150,8 +150,34 @@
         <li>Type Operators</li>
         <li>Bitwise Operators</li>
     </ul>
+    <hr/>
 
+    <h3>Declare Variables for Examples Operators</h3>
+    <h3>Assignment Operators</h3>
 
+        <?php
+            $num1 = 1;
+            $num2 = 2;
+            $sum;
+        ?> 
+
+    <h3>Arithmetic Operators</h3>    
+
+        <?php
+            $sum = $num1 + $num2;
+            echo $sum;
+            echo '<br>';
+            $sum = $num1 - $num2;
+            echo $sum;
+            echo '<br>';
+            $sum = $num1 * $num2;
+            echo $sum;
+            echo '<br>';
+            $sum = $num1 / $num2;
+            echo $sum;
+
+        ?>
+    
 
 </body>
 </html>
