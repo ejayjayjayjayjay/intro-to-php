@@ -120,6 +120,37 @@
         //Initializing a value in a variable
         $myName = 'Ejay';
     ?>
+    <hr/>
+    <h3>Php Constants in Variable</h3>
+    <?php
+        CONST PI = 3.14;
+        CONST BALL_WIDTH = 5;
+        CONST BALL_HEIGHT = 5;
+        echo PI;
+        echo '<br>';
+        echo BALL_HEIGHT;
+        echo '<br>';
+        echo BALL_WIDTH;
+    ?>
+
+    <hr/>
+    <h2>Expressions & Operators</h2>
+    <ul>
+        <li>Arithmetic Operators</li>
+        <li>Assignment Operators</li>
+        <li>Comparison Operators</li>
+        <li>Increment & Decrement Operators</li>
+        <li>Logical Operators</li>
+        <li>String Operators</li>
+        <li>Array Operators</li>
+        <li>Conditional Assigntment Operators</li>
+        <li>precedence operators</li>
+        <li>Error Control Operators</li>
+        <li>Execution Control Operators</li>
+        <li>Type Operators</li>
+        <li>Bitwise Operators</li>
+    </ul>
+
 
 
 </body>
