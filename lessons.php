@@ -53,7 +53,7 @@
     <?php
 
         echo 20;
-        //IT WILL BE INLINE TO EACH OTHER
+        echo '<br>';
         echo "10";
 
     ?>
@@ -68,8 +68,19 @@
 
     ?>
     <hr/>
-
     <h2>Floats</h2>
+    <?php
+        echo 20.5;
+        echo '<br>';
+        echo 38.35;
+        echo '<br>';
+        echo 1384.35274;
+    ?>
+
+    <h3>PHP Float Data Type</h3>
+    <p>20.5</p>
+    <h3>C# Float Data Type</h3>
+    <p>20.5f</p>
 
 </body>
 </html>
