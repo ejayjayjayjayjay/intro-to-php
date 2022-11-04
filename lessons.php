@@ -205,29 +205,27 @@
         ?>
         <hr/>
 
-    <h3>Comparison & Strick Equality Operators</h3>
-    <?php
+        <h2>PHP Operators</h2>
+  <?php 
+  $num1 == $num2;
+  $num2 === $num2;
+  $num1 != $num2;
+  $num1 !== $num2;
+  $num1 < $num2;
+  $num1 <= $num2;
+  $num1 > $num2;
+  $num1 >= $num2;
+  $num1 <=> $num2;
+  ?>
 
-        $num1 == $num2;
-        $num1 === $num2;
-        $num1 != $num2;
-        $num1 !== $num2;
-        $num1 < $num2;
-        $num1 <= $num2;
-        $num1 > $num2;
-        $num1 >= $num2;
-        $num1 <=> $num2;
-    ?>
-
-<hr />
+  <hr />
   <?php
     $num1 = 1;
     $num2 = "2";
     $num1 == $num2;
     $num1 === $num2;
   ?>
-  <hr/>
-
+<h3>Equality and Strict Equality Operators Example</h3>
 <?php
     $num1 = 1;
     $num2 = "2";
@@ -261,31 +259,93 @@
       echo "this is an example of strict equality operator";
     };
   ?>
-
-<hr/>
-<h3>Less than and Greater than Operators Example</h3>
+<hr />
+<h3>Not Equal and Strict Not Equal Operators Example</h3>
 <?php
-    $nume1 = 1;
-    $nume2 = 2;
-    $nume3 = 3;
-    $nume4 = 4;
-    $nume5 = 5;
-    $nume6 = 5;
+    $num1 = 1;
+    $num2 = "2";
+    $num3 = "1";
+    $num4 = 4;
+    $num5 = "4";
+    $num6 = 4;
 
-    if($num1 < $num2){
-        echo 'num1 is less than num2';
+    echo gettype($num1);
+    echo "<br />";
+    echo "<br />";
+    echo gettype($num2);
+    echo "<br />";
+    echo "<br />";
+    if ($num1 != $num3){
+      echo "this is an example of not equal to operator";
+    };
+    echo "<br />";
+    echo "<br />";
+    echo gettype($num4);
+    echo "<br />";
+    echo "<br />";
+    echo gettype($num5);
+    echo "<br />";
+    echo "<br />";
+
+    /* if ($num4 === $num5){
+      echo "this is an example of strict equality operator";
+    }; */
+    if ($num4 !== $num5){
+      echo "this is an example of not identical operator";
+    };
+  ?>
+  <hr />
+  <h3>Lessthan and Graterthan Operators Example</h3>
+  <?php
+    $num1 = 1;
+    $num2 = 2;
+    $num3 = 3;
+    $num4 = 4;
+    $num5 = 5;
+    $num6 = 5;
+
+    if ($num1 < $num2){
+      echo "num1 is lessthan num2";
     };
     echo "<br />";
     echo "<br />";
     if ($num3 <= $num2){
-        echo "num3 is less than or equal to num2";
+      echo "num3 is lessthan or equal to num2";
     };
     echo "<br />";
     echo "<br />";
-    if($num5 >= $num6){
-        echo 'num5 is greater than or equal to num6';
+    if ($num5 >= $num6){
+      echo "num5 is greaterthan or equal to num6";
     };
-?>
+  ?>
+  <hr />
+  <h3>Spaceship Operator Example</h3>
+  <?php
+    $num1 = 1;
+    $num2 = 2;
+    $num3 = 2;
+    //$num1 <=> $num2
+      if ($num1 <=> $num2){
+        print "if the one on the right greaterthan the number on the left they should return -1";
+      };
+        echo "<br />";
+        echo "<br />";
+        echo $num1 <=> $num2;
+        echo "<br />";
+        echo "<br />";
+        print "if both numbers ate equal to one another";
+        echo "<br />";
+        echo "<br />";
+        print ($num2 <=> $num2);
+        echo "<br />";
+        echo "<br />";
+      if ($num2 <=> $num1){
+        echo "if the number on the left is greaterthan the one on the right this should return 1";
+      };
+        echo "<br />";
+        echo "<br />";
+        echo $num2 <=> $num1;
+  ?>
 
 </body>
 </html>
