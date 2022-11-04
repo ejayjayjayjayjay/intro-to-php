@@ -346,6 +346,41 @@
         echo "<br />";
         echo $num2 <=> $num1;
   ?>
+  <hr/>
+  <h2>Logical Operators</h2>
+  <h3>Logical AND &&</h3>
+  <?php
+    $num1 = 5;
+    $num2 = 10;
+
+      if($num1 === 5 AND $num2 === 10){
+            echo "if both value are true display this paragraph";
+      }
+      echo "<br />";
+      echo "<br />";
+      if ($num1 ===5 && $num2 ===10) {
+        echo "if both value are true display this paragraph";
+        echo "<br>";
+        echo "this is the shorthand version of logical AND operators";
+      }
+  ?>
+  <hr/>
+  <h3>Logical OR ||</h3>
+  <?php
+    $num1 = 5;
+    $num2 = 10;
+
+    if ($num1 === 5 or $num2 === 6){
+        echo 'if one of the value are true display this paragraph';
+    }
+    echo "<br />";
+    echo "<br />";
+    if ($num1 === 5 || $num2 === 16){
+        echo 'if one of the value are true display this paragraph';
+        echo "<br />";
+        echo "this is the shorthand version of OR operators";
+    }
+    ?>
 
 </body>
 </html>
