@@ -219,5 +219,73 @@
         $num1 <=> $num2;
     ?>
 
+<hr />
+  <?php
+    $num1 = 1;
+    $num2 = "2";
+    $num1 == $num2;
+    $num1 === $num2;
+  ?>
+  <hr/>
+
+<?php
+    $num1 = 1;
+    $num2 = "2";
+    $num3 = "1";
+    $num4 = 4;
+    $num5 = "4";
+    $num6 = 4;
+
+    echo gettype($num1);
+    echo "<br />";
+    echo "<br />";
+    echo gettype($num2);
+    echo "<br />";
+    echo "<br />";
+    if ($num1 == $num3){
+      echo "this is an example of equality operator";
+    };
+    echo "<br />";
+    echo "<br />";
+    echo gettype($num4);
+    echo "<br />";
+    echo "<br />";
+    echo gettype($num5);
+    echo "<br />";
+    echo "<br />";
+
+    /* if ($num4 === $num5){
+      echo "this is an example of strict equality operator";
+    }; */
+    if ($num4 === $num6){
+      echo "this is an example of strict equality operator";
+    };
+  ?>
+
+<hr/>
+<h3>Less than and Greater than Operators Example</h3>
+<?php
+    $nume1 = 1;
+    $nume2 = 2;
+    $nume3 = 3;
+    $nume4 = 4;
+    $nume5 = 5;
+    $nume6 = 5;
+
+    if($num1 < $num2){
+        echo 'num1 is less than num2';
+    };
+    echo "<br />";
+    echo "<br />";
+    if ($num3 <= $num2){
+        echo "num3 is less than or equal to num2";
+    };
+    echo "<br />";
+    echo "<br />";
+    if($num5 >= $num6){
+        echo 'num5 is greater than or equal to num6';
+    };
+?>
+
 </body>
 </html>
