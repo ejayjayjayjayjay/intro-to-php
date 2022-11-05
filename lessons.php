@@ -659,10 +659,39 @@
   }
 ?>
 
-
+<hr/>
 
 <h3>FOR EACH LOOP example</h3>
 
+<?php
+  $array = ['ejay', 'lebron', 'wade'];
+
+  foreach($array as $value){
+      echo $value;
+      echo '<br>';
+  }
+
+?>
+
+<hr/>
+
+<h3>FOR EACH LOOP example2</h3>
+
+<?php
+  $array = [
+
+    'First Name' => 'Josell',
+    'Last Name' => 'Vibar',
+    'Eye color' => 'black',
+
+  ];
+
+  foreach($array as $key => $value){
+    echo $key . ': ' . $value;
+    echo '<br/>';
+  }
+
+?>
 
 </body>
 </html>
