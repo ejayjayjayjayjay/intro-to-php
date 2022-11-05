@@ -725,5 +725,60 @@
   }
   ?>
 
+  <h3>Continue Statement</h3>
+
+  <?php
+    $a = 1;
+
+    while($a < 10){ //start of the while loop statement
+      $a++;
+      if($a === 5){ //nested if conditional statement
+        continue; // break statement when we reach 5
+      }
+      echo $a;
+      echo '<br/>';
+  }
+    
+  ?>
+
+  <hr/>
+
+  <h2> INCLUDE AND REQUIRE </h2>
+  
+  
+  <?php
+
+    /* 
+    ways to include files in a document in php
+    include
+    include_once
+    require
+    require_once
+    
+    */
+
+
+    include 'testVariable.php';
+    echo 'we are accessing the value from the testVariable.php ' . $a;
+
+  ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
