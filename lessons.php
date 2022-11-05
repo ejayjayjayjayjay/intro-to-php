@@ -428,6 +428,240 @@
         echo '<br>';
         var_dump($num1);
     ?>
+    <hr/>
+
+    <h3>INCREMENT AND DECREMENT</h3>
+    <?php 
+  $num1 = 9;
+  //++$num1; // this should output  10
+  //$num1++;
+  //var_dump($num1++); 
+  echo  "<br>";
+  var_dump(++$num1); 
+?>
+
+<h4>DECREMENTS</h4>
+<?php 
+  $num1 = 9;
+  //++$num1; // this should output  10
+  //$num1++;
+  //var_dump($num1++); 
+  echo  "<br>";
+  var_dump(--$num1); 
+?>
+
+
+<hr>
+
+<h3>String Operators</h3>
+<?php
+  $a = "My name is ";
+  $b = "Rodrigo!";
+  $c = $a . $b;
+  echo  "<br>";
+  echo $a;
+  echo $b;
+  echo  "<br>";
+  echo  "<br>";
+  echo $c;
+  echo  "<br>";
+  $d = 3;
+  $e = 4;
+  $f = $d . $e;
+  echo $d;
+  echo  "<br>";
+  echo $e;
+  echo  "<br>";
+  echo $f;
+?>
+
+<hr>
+<h1>CONTROL STRUCTURES</h1>
+
+<h3>CONTROL STRUCTURES - if statements</h3>
+
+<?php 
+  /* if(condition){
+        //Antyhing between the curly brackets are instrucitons to be run.
+  } */
+
+  echo "if(condition) {";
+  echo "<br />";
+  echo "<br/ >";
+  echo "<br>";
+  echo "}";
+?>
+
+<h3>If statement example 1 Declare variables and escape characters</h3>
+
+<?php 
+    echo "\$a = 5;";
+    echo "<br>";
+    echo "\$b = 5;";
+?>
+
+<h3>If statement example 2</h3>
+<?php 
+
+  $a = 5;
+  $b  = 10;
+
+  if($a === $b){
+    echo "Variable as is the same value with variable b!";
+  }
+
+  echo "Awts! The text in the code block did not get displaye!!";
+?>
+
+<h3>Else statement example 3</h3>
+
+<?php 
+  $a = 5;
+  $b = 10;
+
+  if($a === $b){
+    echo "Variable as is the same value with variable b!";
+  } else {
+    echo "The variables \$a and \$b are NOT THE SAME!";
+  }
+?>
+
+
+<h3>ELSE IF statement example </h3>
+
+<?php 
+  $a = 5;
+  $b = 10;
+  $a = 10;
+
+  if($a === $b){
+    echo "Variable \$a is the same value with variable \$b!";
+  } 
+  elseif ($b === 5) {
+    echo "The variables \$b is equal to 10";
+  }
+  else{
+    echo "They are NOT THE SAME!";
+  }
+?>
+
+<hr>
+
+<h2>CONTROL STRUCTURE - SWITCH STATEMENTS</h2>
+
+<?php
+  $a = 100;
+  switch($a) { // this is our condition 
+    case 50: // this is the first value we check if it is true
+      echo "Variable is equal to 50!"; // our code we want to display if the value is true.
+      break; // We use this to add a break to our code when we write our switch cases.
+    case 100:
+      echo "Variable is equal to 100!";
+      break;
+    default: // This isthe same feature as the else statement
+      echo "Did not find the equal value and none of this cases were true!";
+
+  } // This is the end of one SWITCH STATEMENT
+
+?>
+
+<h3>Switch example 2 - When we are checking for a boolean it is better to use if,else, else if statement</h3>
+
+<?php 
+  $a = true;
+  if($a === true){
+    echo "Variable is true!";
+  }
+  elseif($a === false){
+    echo "Varioable is false!";
+  }
+?>
+
+<hr>
+
+<h2>Loops</h2>
+
+<?php 
+  $a = 20;
+  $b = 20;
+
+  if($a === $b){
+    echo "these values are the same!";
+  } 
+  
+  echo "<br>";
+
+?>
+
+<h3>WHILE LOOPS example 1 and test the + operator for incrementing</h3>
+
+
+<?php 
+  $a = 0;
+  $b = 20;
+
+  while($a <$b){
+    //echo $a++;
+    // echo "<br>";
+    // echo "Keep looping this! " . $a++;
+    echo "Keep looping this!";
+    echo "<br>";
+    $a++;
+  
+  }
+  
+
+?>
+<hr>
+<h3> INFINITE LOOPS - <span style="color:red;">BAD!!!</span></h3>
+
+
+<?php 
+  
+    echo "while(true === true){";
+    echo "<br>";
+    echo "echo 'This will  continue FOREVER!! '";
+    echo "<br>";
+    
+  "}"
+?>
+<hr>
+
+<h3>WHILE LOOPS 2</h3>
+
+<?php 
+  $a = 1;
+  while ($a <= 5){
+      echo "Loop number" . $a++;
+      echo "<br>";
+  }
+?>
+
+<hr>
+
+<h3>DO WHILE LOOP</h3>
+
+<?php 
+  do {
+    echo "Loop number " . $a++;
+    echo "<br />";
+  } while ($a<=10);
+?>
+
+<hr>
+
+<h3>FOR LOOPS</h3>
+
+<?php 
+  for($i = 0; $i < 10; $i++){
+    echo "This should run 10 time!";
+    echo "<br />";
+  }
+?>
+
+
+
+<h3>FOR EACH LOOP example</h3>
 
 
 </body>
