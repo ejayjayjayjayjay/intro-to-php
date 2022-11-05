@@ -370,17 +370,65 @@
     $num1 = 5;
     $num2 = 10;
 
-    if ($num1 === 5 or $num2 === 6){
+    if ($num1 === 5 or $num2 === 10){
         echo 'if one of the value are true display this paragraph';
     }
     echo "<br />";
     echo "<br />";
-    if ($num1 === 5 || $num2 === 16){
+    if ($num1 === 1 || $num2 === 16){
         echo 'if one of the value are true display this paragraph';
         echo "<br />";
         echo "this is the shorthand version of OR operators";
     }
     ?>
+    <hr/>
+    <h3>Logical XOR</h3>
+    <?php
+      $num1 = 10;
+      $num2 = 20;
+      $num3 = 5;
+      $num4 = 6;
+
+      if($num1 === 10 xor $num2 === 5){
+        $result1 = $num1 === 10 xor $num2 === 5;
+        echo 'True xor false';
+        echo '<br>';
+        echo 'if one of this are true display this text!';
+        echo '<br>';
+        echo $result1 ? 'true':'false';
+      }
+      echo '<br>';
+      echo '<br>';
+      $result2 = $num3 === 5 xor $num4 === 6;
+      /* echo 'true xor true';
+      echo '<br>';
+      echo 'if one of this is true display this text!';
+      echo '<br>';
+      echo $result2 ? 'true':'false';
+      echo '<br>';
+      var_dump($num3 === 5 xor $num4 === 6); */
+      
+      if($result2){
+        echo 'true xor true';
+        echo '<br>';
+        echo 'if one of this is true display this text!';
+        echo '<br>';
+        echo $result2 ? 'true':'false';
+        echo '<br>';
+        var_dump($num3 === 5 xor $num4 === 6);
+      }
+    ?>
+
+    <hr/>
+    <h4>Logical !== NOT</h4>
+    <h4>Not Equal</h4>
+    <?php
+      $num1 = 100;
+      var_dump($num1 !== 60);
+        echo '<br>';
+        var_dump($num1);
+    ?>
+
 
 </body>
 </html>
