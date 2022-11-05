@@ -105,6 +105,24 @@
 
     </section>
 
+    <section>
+
+        <div class="form">
+            <form action="calculateFunctions.php" method="get" class="form-control">
+                <input type="number" name="num1" placeholder="number 1">
+                <select name="operations">
+                    <label for="operations">Choose Arithmetics Operators</label>
+                    <option value="add">Add</option>
+                    <option value="subtract">Subtract</option>
+                </select>
+
+                <input type="number" name="num2" placeholder="number 2">
+                <button type="submit" class="btn bg-danger">CALCULATE</button>
+            </form>
+        </div>
+
+    </section>
+
     <!-- JS BUNDLE -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
