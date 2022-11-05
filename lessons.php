@@ -693,5 +693,37 @@
 
 ?>
 
+<hr/>
+
+<h2>Break and Continue Statements</h2>
+<h3>Example 1</h3>
+
+<?php
+
+  $a = 1; //declare and initialize a variable
+
+  while($a <= 10){ //start of the while loop statement
+      if($a === 5){ //nested if conditional statement
+        break; // break statement when we reach 5
+      }
+      echo $a++;
+      echo '<br/>';
+  }
+
+?>
+
+<h3>Example 2</h3>
+
+  <?php
+    $a = 1;
+
+    while ($a++){ //start of the while loop
+      echo $a; // THIS WILL BECOME AN INFINITE LOOP IF WE DONT SET A CONDITION
+      while($a >= 10){
+      break 2; // this will crash our browser if we set this to 1
+    }
+  }
+  ?>
+
 </body>
 </html>
